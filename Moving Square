@@ -1,0 +1,19 @@
+int x = 0;
+int speed = 2;
+
+void setup()
+{
+size(400,400);
+background(#CE6868);
+}
+
+void draw()
+{
+  
+  fill(#85E3BC);
+  rect(x,200,75,75);
+  rect(200,x,75,75);
+  x=x+speed;
+  println("I'm running");
+  //delay(1000);
+}
