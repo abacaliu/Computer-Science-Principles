@@ -1,0 +1,31 @@
+int x = 0;
+int y = 0;
+int r = 0;
+int cr = 0;
+int cg = 0;
+int cb = 0;
+int w = 0;
+int h = 0;
+void setup()
+{
+  size(700,700);
+  background(#115DAD);
+}
+
+void draw()
+{
+  x=(int)(Math.random()*700);
+  y=(int)(Math.random()*700);
+  r=(int)(Math.random()*200);
+  cr=(int)(Math.random()*500);
+  cg=(int)(Math.random()*500);
+  cb=(int)(Math.random()*500);
+  w=(int)(Math.random()*200);
+  h=(int)(Math.random()*200);
+  fill(cr,cg,cb);
+  ellipse(x,y,r,r);
+  fill(0);
+  ellipse(x,y,r/3,r/3);
+  fill(cr,cg,cb);
+  rect(x+100,y+100,h,h);
+}
